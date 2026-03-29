@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { posters } from "../data/posters";
 import { motion } from "framer-motion";
+import Image from "next/image";
 type Poster = {
   id: number;
   title: string;
@@ -59,11 +60,12 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
           >
 
-            {/* Image */}
-            <div className="overflow-hidden rounded-lg">
-              <img
+            <div className="relative h-64 overflow-hidden rounded-lg">
+              <Image
                 src={poster.image}
-                className="group-hover:scale-110 transition duration-500"
+                alt={poster.title}
+                fill
+                className="group-hover:scale-110 transition duration-500 object-cover"
               />
             </div>
 
@@ -88,10 +90,14 @@ export default function Home() {
 
           <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl border border-white/20 text-white max-w-md">
 
-            <img
-              src={selected.image}
-              className="rounded mb-3"
-            />
+            <div className="relative h-96 w-full mb-3">
+              <Image
+                src={selected.image}
+                alt={selected.title}
+                fill
+                className="rounded object-contain"
+              />
+            </div>
 
             <h2 className="text-xl font-bold">
               {selected.title}

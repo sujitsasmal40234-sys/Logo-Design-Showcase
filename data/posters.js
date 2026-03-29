@@ -1,16 +1,16 @@
 export const posters = [
   {
     id: 1,
-    title: "Marketing Poster",
+    title: "VEDA",
     category: "Marketing",
-    image: "/posters/poster1.jpg",
-    description: "Clean promotional poster design"
+    image: "/posters/VEDA.jpg",
+    description: "VEDA – Natural Cosmetics & Wellness"
   },
   {
     id: 2,
-    title: "Minimal Poster",
-    category: "Minimal",
-    image: "/posters/poster2.png",
-    description: "Simple and aesthetic design"
+    title: "Visual of Manic Lab",
+    category: "Social Media",
+    image: "/posters/VisualofManicLab.jpeg",
+    description: "Where Your Vision Finds Its Form ✨"
   }
 ];
