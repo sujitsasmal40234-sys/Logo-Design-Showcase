@@ -16,7 +16,7 @@ export default function Home() {
   const [filter, setFilter] = useState("All");
   const [selected, setSelected] = useState<Poster | null>(null);
 
-  const categories = ["All", "Marketing", "Minimal"];
+  const categories = ["All", "Marketing", "Minimal", "Social Media"];
 
   const filtered =
     filter === "All"
@@ -27,8 +27,8 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white p-6">
 
       {/* Title */}
-      <h1 className="text-4xl font-bold mb-6">
-        Poster Showcase 🎨
+      <h1 className="text-4xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        Logo Design Showcase 🎨
       </h1>
 
       {/* Filter Buttons */}
